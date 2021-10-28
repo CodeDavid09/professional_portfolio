@@ -50,29 +50,114 @@ a {
 
   .welcome h2, h3 {
     font-family: "Helvetica Neue",Helvetica,Arial;
-    margin-left: 275px;
+    margin-left: 250px;
     position: absolute;
     top: 35%;
   }
 
   h3 {
-      font-size: smaller;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+      font-size: small;
       position: absolute;
       top: 40%;
   }
-  .welcome,.aboutme, .work, .resume, .contact{
+
+ .section-header {
+        font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 100px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-align: left;
+        z-index: 10;
+        position: relative;
+        line-height: 0.6em;
+        pointer-events: none;
+        flex: 1 100%;
+    }
+
+    h4 {
+        border: 10px;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 25px;
+}
+
+  .welcome {
     width: 1280px;
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
     margin: 25px auto 0;
-    padding: 40px;
+    padding: 60px;
     font: "Helvetica Neue",Helvetica,Arial;
   }
 
+  .aboutme, .resume {
+    width: 1280px;
+    max-width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 50px auto 50px;
+    padding: 40px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    background-color: lavender;
+    margin-right: 200px;
+    font-size: 16px;
+  }
+  .work, .contact{
+    width: 1280px;
+    max-width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 50px auto 50px;
+    padding: 40px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    background-color: lavender;
+    margin-left: 200px;
+  }
   .float-right {
     float: right;
     margin-right: 380px;
     max-height: 350px;
     border-radius: 20%;
 }
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+h5 {
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.container-left {
+    background-color: lavender;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ #info{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    list-style: none;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-weight: bold;
+    
+
+}
+
+.icons img {
+    display: inline;
+    margin-top: 20px;
+}
+
+.footer h6 {
+    font-size: 20px;
+}
+
