@@ -42,32 +42,57 @@ a {
     text-decoration: none;
 }
 
-.container {
+.hero img {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url ("Assets/images/background img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}  
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  .item {
-    height: 40px;
-    margin-bottom: 10px;
-  }
 
-  
+  #welcome {
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 60px  0 50px 0;
+    padding: 40px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+#intro {
+    margin-left: 25px;
+    margin-bottom: 200px;
+}
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    vertical-align: center;
+    margin-bottom: 50px;
+}
   h3 {
-    font-family: "Helvetica Neue",Helvetica,Arial;
+    font-family: 'Montserrat', sans-serif;
       font-size: small;
       position: absolute;
       top: 40%;
   }
 
  .section-header {
-        font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 80px;
         font-weight: 800;
         letter-spacing: -0.02em;
         text-align: left;
-        z-index: 10;
+        margin-left: 0px;
+        margin-top: 0px;
         position: relative;
         line-height: 0.6em;
         pointer-events: none;
@@ -75,59 +100,60 @@ a {
     }
 
     h4 {
-        border: 10px;
-    vertical-align: baseline;
+    border: 10px;
+    vertical-align: center;
     margin: 0;
     padding: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-  .welcome {
-    width: 1280px;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 25px auto 0;
-    padding: 60px;
-    font: "Helvetica Neue",Helvetica,Arial;
-  }
+.section-one  img {
+    display: block;
+    margin-left: 500px;
+    margin-bottom:100px;
+    max-width: 225px;
+    border-radius: 10px;
+}
+#hp  {
+    float: right;    
+     margin: 0 200px 0 0;
+    }
 
-  .welcome-header {
-    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-    font-size: 80px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    text-align: left;
-    z-index: 10;
-    position: relative;
-    line-height: 0.6em;
-    pointer-events: none;
-    flex: 1 100%;
-  }
-
-  #aboutme, #resume, #work, #contact {
-    width: 1280px;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 50px  0 50px 0;
-    padding: 40px;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    background-color: lavender;
+  #aboutme, #work, #contact {
+    margin-bottom: 50px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
     font-size: 16px;
+  }
+
+.mywork {
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: none;
+  border-width: 1px;
+  float: left;
+  font-family:'Montserrat', sans-serif;
+  
+}
+.mywork header {
+   display: row;
+    padding: 20px;
+    background: white;
+    color: black;
+  }
+
+  #contact{
+      margin-top: 300px;
   }
 
   .verticalLine {
     border-left: thick solid black;
-    font-family: "Helvetica Neue",Helvetica,Arial;
     font-weight: 200; 
   }
 
-  .float-right {
-    float: right;
-    margin-right: 380px;
-    max-height: 350px;
-    border-radius: 20%;
-}
 .footer {
     padding: 30px;
     clear: both;
@@ -138,14 +164,7 @@ a {
 h5 {
     font-size: 40px;
     margin-top: 50px;
-}
-
-.container-left {
-    background-color: lavender;
-    color: black;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    font-family:'Montserrat', sans-serif;
 }
 
  #info{
@@ -158,7 +177,7 @@ h5 {
 }
 
 .icons img {
-    display: inline;
+    display: inline-block;
     margin-top: 20px;
 }
 
@@ -166,3 +185,8 @@ h5 {
     font-size: 20px;
 }
 
+body {
+    width: 100%;
+    min-height: 100%;
+}
+    
