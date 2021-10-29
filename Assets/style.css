@@ -9,6 +9,11 @@ body {
     border-radius: 20px;
 }
 
+p {
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+}
+
 .header {
     padding: 20px;
     font-family: "Helvetica Neue",Helvetica,Arial;
@@ -48,13 +53,7 @@ a {
     margin-bottom: 10px;
   }
 
-  .welcome h2, h3 {
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    margin-left: 250px;
-    position: absolute;
-    top: 35%;
-  }
-
+  
   h3 {
     font-family: "Helvetica Neue",Helvetica,Arial;
       font-size: small;
@@ -64,7 +63,7 @@ a {
 
  .section-header {
         font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-        font-size: 100px;
+        font-size: 80px;
         font-weight: 800;
         letter-spacing: -0.02em;
         text-align: left;
@@ -92,29 +91,37 @@ a {
     font: "Helvetica Neue",Helvetica,Arial;
   }
 
-  .aboutme, .resume {
+  .welcome-header {
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+  }
+
+  #aboutme, #resume, #work, #contact {
     width: 1280px;
-    max-width: 50%;
+    max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 50px auto 50px;
+    margin: 50px  0 50px 0;
     padding: 40px;
     font-family: "Helvetica Neue",Helvetica,Arial;
     background-color: lavender;
-    margin-right: 200px;
     font-size: 16px;
   }
-  .work, .contact{
-    width: 1280px;
-    max-width: 50%;
-    overflow: hidden;
-    box-sizing: border-box;
-    margin: 50px auto 50px;
-    padding: 40px;
+
+  .verticalLine {
+    border-left: thick solid black;
     font-family: "Helvetica Neue",Helvetica,Arial;
-    background-color: lavender;
-    margin-left: 200px;
+    font-weight: 200; 
   }
+
   .float-right {
     float: right;
     margin-right: 380px;
@@ -143,13 +150,11 @@ h5 {
 
  #info{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
     list-style: none;
     font-family: "Helvetica Neue",Helvetica,Arial;
     font-weight: bold;
-    
-
 }
 
 .icons img {
